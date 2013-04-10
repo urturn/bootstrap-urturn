@@ -5286,6 +5286,16 @@ h2 {
 .brand {
   font-family: "HermesCond";
 }
+.brand.urturn {
+  background: #e60f00 url(../images/logo.png) no-repeat 50% 45%;
+  width: 100px;
+  height: 20px;
+  margin-right: 2em;
+  margin-left: 0;
+}
+.brand.urturn strong {
+  display: none;
+}
 .hero-unit {
   padding: 40px;
   margin-bottom: 20px;
@@ -5544,6 +5554,29 @@ h2 {
 }
 .btn-primary:hover {
   color: #ffffff;
+}
+.footer {
+  background-color: #222222;
+  color: #ffffff;
+  padding: 40px 0;
+}
+.footer-menu i {
+  background: url('../images/icons/icone_contact_30px.png');
+  width: 30px;
+  height: 30px;
+  display: block;
+  float: left;
+  margin-top: -5px;
+  margin-right: 15px;
+}
+.footer-menu i.blog {
+  background-position: 0 0;
+}
+.footer-menu i.contact {
+  background-position: 0 -30px;
+}
+.footer-menu i.dev {
+  background-position: 0 -60px;
 }
 pre {
   background-color: #ffffff;
