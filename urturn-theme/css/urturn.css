@@ -5253,14 +5253,15 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
-.brand.urturn {
-  background: #e60f00 url(../images/logo.png) no-repeat 50% 45%;
-  width: 100px;
-  height: 20px;
-  margin-right: 2em;
-  margin-left: 0;
+.brand .logo {
+  width: 112px;
+  height: 44px;
+  margin: 0 32px 4px 0;
+  padding: 0;
+  background-color: #e60f00;
+  background: #e60f00 url(../images/logo.png) no-repeat 50% 50%;
 }
-.brand.urturn strong {
+.brand strong {
   display: none;
 }
 .hero-unit {
