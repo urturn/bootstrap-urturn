@@ -211,18 +211,20 @@ pre {
 
 hr{
   height: 20px;
+  margin: 13px 0 33px;
   position: relative;
-}
+  border: none;
 
-hr:before{
-  position: absolute;
-  content: '';
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background-color: rgba(230,230,230, 0.25);
-  border-radius: 50%;
-  box-shadow: rgba(150, 150, 150, 0.5) 0 5px 10px;
-  clip: rect(20px, auto, 50px, 0);
+  &:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(230,230,230, 0.25);
+    border-radius: 50%;
+    box-shadow: rgba(150, 150, 150, 0.5) 0 5px 10px;
+    clip: rect(20px, auto, 50px, 0);
+  }
 }
