@@ -5253,10 +5253,14 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
-.brand:hover {
+.brand:hover,
+.brand:active,
+.brand:focus {
   color: #3c3c3c;
 }
-.brand:hover .logo {
+.brand:hover .logo,
+.brand:active .logo,
+.brand:focus .logo {
   background-color: #cd0d00;
 }
 .brand.with_logo {
@@ -5279,7 +5283,7 @@ a.badge:focus {
 .hero-unit {
   padding: 40px;
   margin-bottom: 20px;
-  border: 10px solid #ffffff;
+  border: none;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -5288,6 +5292,10 @@ a.badge:focus {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 .well {
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
