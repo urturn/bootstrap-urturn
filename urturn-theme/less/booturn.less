@@ -1,30 +1,11 @@
 // Urturn specific
 
-// Urturn Typography
-@font-face{
-  font-family: "HermesCond";
-  font-weight: 400;
-  src: url('../fonts/hermescond-regular-webfont.eot');
-  src: url('../fonts/hermescond-regular-webfont.svg') format('svg');
-  src: url('../fonts/hermescond-regular-webfont.ttf') format('truetype');
-  src: url('../fonts/hermescond-regular-webfont.woff') format('woff');
-}
-
-@font-face{
-  font-family: "HermesCond";
-  font-weight: 200;
-  src: url('../fonts/hermescond-light-webfont.eot');
-  src: url('../fonts/hermescond-light-webfont.svg') format('svg');
-  src: url('../fonts/hermescond-light-webfont.ttf') format('truetype');
-  src: url('../fonts/hermescond-light-webfont.woff') format('woff');
-}
-
 // Urturn variables
 @redButton:             #F21400;
-@redButtonDark:         #C30B01; 
+@redButtonDark:         #C30B01;
 
 @grayButton:            #787878;
-@grayButtonDark:        #3d3d3d; 
+@grayButtonDark:        #3d3d3d;
 
 @grayText:              #8c8c8c;
 @grayIntro:             #dcdcdc;
@@ -36,7 +17,7 @@
 .font-size(@sizeValue) {
   @remValue: (@sizeValue/10);
   @pxValue: (@sizeValue);
-  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{pxValue}px";
   font-size: ~"@{remValue}rem";
 }
 
@@ -46,25 +27,20 @@
 }
 
 // Titles
-h1, h2{
-  font-family: "HermesCond";
-}
 h1 { font-size: @baseFontSize * 2.6; } // ~38px
 h2 { font-size: @baseFontSize * 1.719; font-weight: 400;} // ~28px
 h2 { text-transform: uppercase; }
 
 // Brand identity
-.brand{
-  font-family: "HermesCond";
-  &.urturn{
-    background:@red url(../images/logo.png) no-repeat 50% 45%;
-    width: 100px;
-    height: 20px;
-    margin-right: 2em;
-    margin-left: 0;
-    strong{
-      display: none;
-    }
+.brand.urturn{
+  background:@red url(../images/logo.png) no-repeat 50% 45%;
+  width: 100px;
+  height: 20px;
+  margin-right: 2em;
+  margin-left: 0;
+
+  strong{
+    display: none;
   }
 }
 .hero-unit{
@@ -78,14 +54,11 @@ h2 { text-transform: uppercase; }
   .box-shadow(0px 0px 5px rgba(0,0,0,.1));
 }
 
-// Urturn Buttons 
+// Urturn Buttons
 .btn{
-  font-size: 18px;
-  font-weight: 200;
   font-style: normal;
   text-indent: 0px;
   vertical-align: top;
-  font-family: "HermesCond";
   text-shadow: none;
   &.small{
     padding: 5px 5px;
@@ -226,7 +199,7 @@ hr:before{
   bottom: 0;
   top: 0;
   background-color: rgba(230,230,230, 0.25);
-  border-radius: 50%; 
+  border-radius: 50%;
   box-shadow: rgba(150, 150, 150, 0.5) 0 5px 10px;
   clip: rect(20px, auto, 50px, 0);
 }
