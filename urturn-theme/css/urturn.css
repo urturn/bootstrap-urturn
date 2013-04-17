@@ -5253,6 +5253,12 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
+.brand:hover {
+  color: #3c3c3c;
+}
+.brand:hover .logo {
+  background-color: #cd0d00;
+}
 .brand.with_logo {
   padding-top: 0;
   padding-bottom: 0;

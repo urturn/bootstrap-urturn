@@ -28,6 +28,14 @@
 
 // Brand identity
 .brand {
+  &:hover {
+    color: @textColor;
+
+    .logo {
+      background-color: darken(@red,5%);
+    }
+  }
+
   &.with_logo {
     padding-top: 0;
     padding-bottom: 0;
