@@ -5253,16 +5253,6 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
-h1 {
-  font-size: 39px;
-}
-h2 {
-  font-size: 25.785px;
-  font-weight: 400;
-}
-h2 {
-  text-transform: uppercase;
-}
 .brand.urturn {
   background: #e60f00 url(../images/logo.png) no-repeat 50% 45%;
   width: 100px;
