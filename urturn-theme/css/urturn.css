@@ -5609,6 +5609,10 @@ pre {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
+code {
+  color: #780dc0;
+  background-color: #ffffff;
+}
 .navbar-inner {
   background: url('../images/patterns/bg_header.png') repeat;
 }
