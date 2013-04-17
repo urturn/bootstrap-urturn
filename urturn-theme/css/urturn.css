@@ -5253,25 +5253,25 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
-.brand {
+.navbar .brand {
   font-size: 25px;
 }
-.brand:hover,
-.brand:active,
-.brand:focus {
+.navbar .brand:hover,
+.navbar .brand:active,
+.navbar .brand:focus {
   color: #3c3c3c;
 }
-.brand:hover .logo,
-.brand:active .logo,
-.brand:focus .logo {
+.navbar .brand:hover .logo,
+.navbar .brand:active .logo,
+.navbar .brand:focus .logo {
   background-color: #cd0d00;
 }
-.brand.with_logo {
+.navbar .brand.with_logo {
   padding-top: 0;
   padding-bottom: 0;
   line-height: 50px;
 }
-.brand .logo {
+.navbar .brand .logo {
   display: inline-block;
   width: 112px;
   height: 44px;
@@ -5280,7 +5280,7 @@ a.badge:focus {
   text-shadow: none;
   background: #e60f00 url(../images/logo.png) no-repeat 50% 45%;
 }
-.brand strong {
+.navbar .brand strong {
   display: none;
 }
 .hero-unit {
