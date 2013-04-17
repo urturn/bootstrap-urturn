@@ -5253,6 +5253,9 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
+.brand {
+  font-size: 25px;
+}
 .brand:hover,
 .brand:active,
 .brand:focus {
@@ -5266,7 +5269,7 @@ a.badge:focus {
 .brand.with_logo {
   padding-top: 0;
   padding-bottom: 0;
-  line-height: 52px;
+  line-height: 50px;
 }
 .brand .logo {
   display: inline-block;
