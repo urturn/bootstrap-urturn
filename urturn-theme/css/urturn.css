@@ -5253,13 +5253,19 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
+.brand.with_logo {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 52px;
+}
 .brand .logo {
+  display: inline-block;
   width: 112px;
   height: 44px;
-  margin: 0 32px 4px 0;
-  padding: 0;
-  background-color: #e60f00;
-  background: #e60f00 url(../images/logo.png) no-repeat 50% 50%;
+  margin: 0 12px 0 0;
+  color: transparent;
+  text-shadow: none;
+  background: #e60f00 url(../images/logo.png) no-repeat 50% 45%;
 }
 .brand strong {
   display: none;
