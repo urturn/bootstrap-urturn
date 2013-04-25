@@ -5610,8 +5610,8 @@ pre {
   border-radius: 4px;
 }
 code {
-  color: #780dc0;
-  background-color: #ffffff;
+  color: #5b5bad;
+  background: none;
 }
 .navbar-inner {
   background: url('../images/patterns/bg_header.png') repeat;
