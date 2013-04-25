@@ -188,56 +188,6 @@ code {
   background: url('../images/patterns/bg_header.png') repeat;
 }
 
-// Doc navigation (inspired by bootstrap website documentation docs.css, not a really nice code indeed)
-.bs-docs-sidenav .nav-header{
-  border: 1px solid #ddd;
-  .font-size(12);
-  padding: 0.3em 0.6em;
-  line-height: 1.3em;
-  font-weight: 400;
-}
-.bs-docs-sidenav {
-  background-color: #fff;
-  .border-radius(4px);
-  .box-shadow(0 1px 4px rgba(0,0,0,.065));
-  & > li > a {
-  display: block;
-  margin: 0 0 -1px;
-  padding: 8px 14px;
-  border: 1px solid #e5e5e5;
-  }
-}
-.bs-docs-sidenav > li:first-child > a {
-  border-radius: 6px 6px 0 0;
-}
-.bs-docs-sidenav > li:last-child > a {
-  border-radius: 0 0 6px 6px;
-}
-.bs-docs-sidenav .bs-docs-sidenav{
-  margin-bottom: 0em;
-  & > li:last-child > a {
-    border-radius: 0 0 0 0;
-  }
-  a{
-    padding-left: 2em;
-  }
-}
-.bs-docs-sidenav > li > a:hover, .bs-docs-sidenav > .active > a:hover {
-  background-color: #e5e5e5;
-  color: @redButtonDark;
-}
-.bs-docs-sidenav > .active > a, .bs-docs-sidenav > .active > a:hover {
-  background-color: @red;
-  color: @white;
-}
-.bs-docs-sidenav > .active > a{
-  position: relative;
-  z-index: 2;
-  border: 0;
-  text-shadow: 0 1px 0 rgba(0,0,0,.15);
-  box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
-}
-
 hr{
   height: 20px;
   margin: 13px 0 33px;
