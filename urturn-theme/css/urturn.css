@@ -5611,6 +5611,7 @@ pre {
 }
 code {
   color: #5b5bad;
+  font-weight: normal;
   background: none;
 }
 .navbar-inner {
