@@ -149,6 +149,17 @@ pre {
 .navbar-inner{
   background: url('../images/patterns/bg_header.png') repeat;
 }
+.navbar .btn-navbar {
+  .buttonBackground(darken(@navbarBackgroundHighlight, 18%), darken(@navbarBackground, 18%));
+}
+@media (max-width: 979px){
+  body{
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+      padding: 0px;
+    } 
+  }
+}
+
 // Quote
 // Blockquotes
 blockquote {
