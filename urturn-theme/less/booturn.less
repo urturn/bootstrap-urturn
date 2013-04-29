@@ -106,31 +106,8 @@ h3 { font-size: @baseFontSize * 1.5; }
 
 // Urturn Buttons
 .btn{
-  font-style: normal;
-  text-indent: 0px;
-  vertical-align: top;
+  .buttonBackground(@btnBackground, @btnBackgroundHighlight, @white, 0 1px 1px rgba(255,255,255,.75));
   text-shadow: none;
-  &.small{
-    padding: 5px 5px;
-    .border-radius(2px);
-  }
-  &:hover{
-    color: @white;
-  }
-  .buttonBackground(@grayButton, @grayButtonDark, @grayButtonDark, 0 1px 1px rgba(255,255,255,.75));
-  .border-radius(2px);
-  padding: 10px 14px;
-  color: @white;
-  text-shadow: none;
-  .font-size(16px);
-  font-weight: light;
-  &.small{
-    padding: 5px 20px 4px 20px;
-    .font-size(16px);
-  }
-  &:hover{
-    color: @white;
-  }
 }
 
 .btn-primary{
@@ -151,6 +128,12 @@ h3 { font-size: @baseFontSize * 1.5; }
   background-color: @grayDarker;
   color: @white;
   padding: 40px 0;
+  @media (max-width: 767px) {
+      margin-right: -20px;
+      margin-left: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
 }
 .footer-menu i{
   background: url('../images/icons/icone_contact_30px.png');
@@ -188,6 +171,40 @@ code {
 .navbar-inner{
   background: url('../images/patterns/bg_header.png') repeat;
 }
+.navbar .btn-navbar {
+  .buttonBackground(darken(@navbarBackgroundHighlight, 18%), darken(@navbarBackground, 18%));
+}
+@media (max-width: 979px){
+  body{
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+      padding: 0px;
+    } 
+  }
+}
+
+// Quote
+// Blockquotes
+blockquote {
+  padding: 0 0 0 16px;
+  margin: 0 0 @baseLineHeight;
+  border-left: 3px solid @grayLighter;
+  padding: 0.8em;
+  background-color: lighten(@grayLighter, 6%);
+  p {
+    color: @grayLight;
+    margin-bottom: 0;
+    font-size: @baseFontSize;
+  }
+  small {
+    display: block;
+    line-height: @baseLineHeight;
+    color: @grayLight;
+    &:before {
+      content: '\2014 \00A0';
+    }
+  }
+}
+
 
 hr{
   height: 20px;
