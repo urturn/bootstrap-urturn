@@ -15,7 +15,7 @@
 
 // Urturn mixins
 .font-size(@sizeValue) {
-  @remValue: (@sizeValue/10);
+  @remValue: (@sizeValue/@baseFontSize);
   @pxValue: (@sizeValue);
   font-size: ~"@{pxValue}px";
   font-size: ~"@{remValue}rem";
@@ -41,11 +41,10 @@ h3 { font-size: @baseFontSize * 1.5; }
 
 // Brand identity
 .navbar {
-  .font-size(16px);
+  .font-size(16);
 
   .brand {
-    .font-size(25px);
-    text-shadow: rgba(0,0,0,.25);
+    text-shadow: 0 1px 0 rgba(0,0,0,.25);
 
     &:hover,
     &:active,
@@ -78,7 +77,7 @@ h3 { font-size: @baseFontSize * 1.5; }
   }
 
   .nav > li > a {
-    text-shadow: rgba(0,0,0,.25);
+    text-shadow: 0 1px 0 rgba(0,0,0,.25);
   }
 }
 .hero-unit{
@@ -116,7 +115,7 @@ h3 { font-size: @baseFontSize * 1.5; }
   .buttonBackground(@redButton, @redButtonDark, @redButtonDark, 0 1px 1px rgba(255,255,255,.75));
   .border-radius(2px);
   text-shadow: none;
-  .font-size(16px);
+  .font-size(16);
   padding: 10px 20px;
   color: @white;
   &:hover{

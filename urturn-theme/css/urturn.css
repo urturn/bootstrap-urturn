@@ -5279,13 +5279,11 @@ h3 {
   font-size: 21px;
 }
 .navbar {
-  font-size: 16pxpx;
-  font-size: 1.6pxrem;
+  font-size: 16px;
+  font-size: 1.1428571428571428pxrem;
 }
 .navbar .brand {
-  font-size: 25pxpx;
-  font-size: 2.5pxrem;
-  text-shadow: rgba(0, 0, 0, 0.25);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 .navbar .brand:hover,
 .navbar .brand:active,
@@ -5310,7 +5308,7 @@ h3 {
   display: none;
 }
 .navbar .nav > li > a {
-  text-shadow: rgba(0, 0, 0, 0.25);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 .hero-unit {
   padding: 40px;
@@ -5428,8 +5426,8 @@ h3 {
   -moz-border-radius: 2px;
   border-radius: 2px;
   text-shadow: none;
-  font-size: 16pxpx;
-  font-size: 1.6pxrem;
+  font-size: 16px;
+  font-size: 1.1428571428571428pxrem;
   padding: 10px 20px;
   color: #ffffff;
 }
