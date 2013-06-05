@@ -5285,6 +5285,7 @@ h3 {
 .navbar .brand {
   font-size: 25pxpx;
   font-size: 2.5pxrem;
+  text-shadow: rgba(0, 0, 0, 0.25);
 }
 .navbar .brand:hover,
 .navbar .brand:active,
@@ -5298,8 +5299,8 @@ h3 {
 }
 .navbar .brand .logo {
   display: inline-block;
-  width: 54px;
-  height: 44px;
+  width: 84px;
+  height: 54px;
   margin: 0 16px 0 0;
   color: transparent;
   text-shadow: none;
@@ -5307,6 +5308,9 @@ h3 {
 }
 .navbar .brand strong {
   display: none;
+}
+.navbar .nav > li > a {
+  text-shadow: rgba(0, 0, 0, 0.25);
 }
 .hero-unit {
   padding: 40px;
@@ -5556,9 +5560,6 @@ code {
   color: #5b5bad;
   font-weight: normal;
   background: none;
-}
-.navbar-inner {
-  background: url('../images/patterns/bg_header.png') repeat;
 }
 .navbar .btn-navbar {
   color: #ffffff;
