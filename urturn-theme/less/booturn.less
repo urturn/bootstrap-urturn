@@ -15,7 +15,7 @@
 
 // Urturn mixins
 .font-size(@sizeValue) {
-  @remValue: (@sizeValue/10);
+  @remValue: (@sizeValue/@baseFontSize);
   @pxValue: (@sizeValue);
   font-size: ~"@{pxValue}px";
   font-size: ~"@{remValue}rem";
@@ -41,43 +41,43 @@ h3 { font-size: @baseFontSize * 1.5; }
 
 // Brand identity
 .navbar {
-  .font-size(16px);
+  .font-size(16);
 
   .brand {
-    .font-size(25px);
+    text-shadow: 0 1px 0 rgba(0,0,0,.25);
 
     &:hover,
     &:active,
     &:focus {
-      color: @textColor;
-
-      .logo {
-        background-color: darken(@red,5%);
-      }
+      opacity: .9;
     }
 
     &.with_logo {
       padding-top: 0;
       padding-bottom: 0;
 
-      line-height: 50px;
+      line-height: @navbarHeight;
     }
 
     .logo {
       display: inline-block;
-      width: 112px;
-      height: 44px;
-      margin: 0 12px 0 0;
+      width: 84px;
+      height: @navbarHeight;
+      margin: 0 16px 0 0;
 
       color: transparent;
       text-shadow: none;
 
-      background: @red url(../images/logo.png) no-repeat 50% 45%;
+      background: url(../images/logo.png) no-repeat 50% 40%;
     }
 
     strong {
       display: none;
     }
+  }
+
+  .nav > li > a {
+    text-shadow: 0 1px 0 rgba(0,0,0,.25);
   }
 }
 .hero-unit{
@@ -115,7 +115,7 @@ h3 { font-size: @baseFontSize * 1.5; }
   .buttonBackground(@redButton, @redButtonDark, @redButtonDark, 0 1px 1px rgba(255,255,255,.75));
   .border-radius(2px);
   text-shadow: none;
-  .font-size(16px);
+  .font-size(16);
   padding: 10px 20px;
   color: @white;
   &:hover{
@@ -168,9 +168,6 @@ code {
   background: none;
 }
 
-.navbar-inner{
-  background: url('../images/patterns/bg_header.png') repeat;
-}
 .navbar .btn-navbar {
   .buttonBackground(darken(@navbarBackgroundHighlight, 18%), darken(@navbarBackground, 18%));
 }
@@ -178,7 +175,7 @@ code {
   body{
     .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
       padding: 0px;
-    } 
+    }
   }
 }
 
