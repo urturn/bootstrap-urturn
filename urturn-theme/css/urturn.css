@@ -5098,28 +5098,19 @@ h3 {
 }
 pre {
   background-color: #ffffff;
-  border: none;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
 }
 pre code {
   font-size: 1em;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
+  background: none;
+  border: none;
 }
 code {
   color: #c00f14;
   font-weight: normal;
   background: white;
-  border: none;
-  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
 }
 .navbar .btn-navbar {
   color: #ffffff;
