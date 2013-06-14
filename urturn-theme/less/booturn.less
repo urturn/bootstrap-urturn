@@ -168,11 +168,12 @@ h3 { font-size: @baseFontSize * 1.5; line-height: 1.4em; }
 
 // Elements
 pre {
+  font-size: 12px;
   background-color: @white;
+  border-color: rgb(217,217,217);
   .border-radius(4px);
 
   code {
-    font-size: 1em;
     background: none;
     border: none;
   }
@@ -201,6 +202,7 @@ code {
     }
   }
 }
+
 
 // Quote
 // Blockquotes
@@ -244,4 +246,11 @@ hr{
     .box-shadow(rgba(150, 150, 150, 0.5) 0 5px 10px);
     clip: rect(20px, auto, 50px, 0);
   }
+}
+
+
+// Tables
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+  background-color: rgb(245,245,245);
 }
