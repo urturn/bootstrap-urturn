@@ -5940,6 +5940,7 @@ h3 {
   border-radius: 16px 0 0 16px;
 }
 .form-search .input-append .btn {
+  height: 33px;
   -webkit-border-radius: 0 16px 16px 0;
   -moz-border-radius: 0 16px 16px 0;
   border-radius: 0 16px 16px 0;
