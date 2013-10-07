@@ -2,21 +2,6 @@
  * URTURN SPECIFIC
  */
 
-// Urturn variables
-
-@redButton:             #F21400;
-@redButtonDark:         #C30B01;
-
-@grayButton:            #787878;
-@grayButtonDark:        #3d3d3d;
-
-@grayText:              #8c8c8c;
-@grayIntro:             #dcdcdc;
-@grayAnimationTitles:   #3c3c3c;
-@grayTitle:             #646464;
-@grayLine:              #d1d0cf;
-
-
 // Urturn mixins
 
 .font-size(@sizeValue) {
@@ -62,7 +47,7 @@ h3 { font-size: @baseFontSize * 1.5; line-height: 1.4em; margin-bottom: 0.2em; }
 
   .brand {
     font-weight: 400;
-    text-shadow: 0 1px 0 rgba(0,0,0,.25);
+    text-shadow: none;
 
     &:hover,
     &:active,
@@ -84,7 +69,6 @@ h3 { font-size: @baseFontSize * 1.5; line-height: 1.4em; margin-bottom: 0.2em; }
       margin: 0 16px 0 0;
 
       color: transparent;
-      text-shadow: none;
 
       background: url(../images/logo.png) no-repeat 50% 40%;
     }
@@ -95,12 +79,18 @@ h3 { font-size: @baseFontSize * 1.5; line-height: 1.4em; margin-bottom: 0.2em; }
   }
 
   .nav > li > a {
-    text-shadow: 0 1px 0 rgba(0,0,0,.25);
+    text-shadow: none;
+  }
+
+  .nav > .active > a,
+  .nav > .active > a:hover,
+  .nav > .active > a:focus {
+    .box-shadow(none);
   }
 }
 
 .navbar-inner {
-  background: @bloodyRed;
+  background: @red;
   border: none;
 }
 
@@ -235,7 +225,7 @@ pre {
 }
 
 code {
-  color: @bloodyRed;
+  color: @red;
   font-weight: normal;
   background: white;
 }
@@ -254,7 +244,7 @@ code {
     color: white;
 
     &:hover {
-      background-color: lighten(@bloodyRed,5%);
+      background-color: lighten(@red,5%);
     }
   }
 }
@@ -307,3 +297,9 @@ hr {
 .table-striped tbody > tr:nth-child(odd) > th {
   background-color: rgb(245,245,245);
 }
+
+
+// Muted
+.muted               { color: @gray; }
+a.muted:hover,
+a.muted:focus        { color: darken(@gray, 10%); }

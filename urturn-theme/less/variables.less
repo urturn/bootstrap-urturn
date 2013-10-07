@@ -9,32 +9,31 @@
 
 // Grays
 // -------------------------
-@black:                 #000;
-@grayDarker:            #222;
-@grayDark:              #3c3c3c;
-@gray:                  #555;
-@grayLight:             #999;
-@grayLighter:           #eee;
-@white:                 #fff;
+@black:                 black;
+@grayDarker:            rgb(86,80,80);
+@grayDark:              rgb(134,126,126);
+@gray:                  rgb(177,169,169);
+@grayLight:             rgb(208,200,200);
+@grayLighter:           rgb(225,222,222);
+@white:                 white;
 
 
 // Accent colors
 // -------------------------
-@blue:                  #049cdb;
-@blueDark:              #0064cd;
-@green:                 #46a546;
-@red:                   #e60f00;
-@bloodyRed:             #c00f14;
-@yellow:                #ffc40d;
-@orange:                #f89406;
-@pink:                  #c3325f;
-@purple:                #7a43b6;
+@blue:                  rgb(100,160,200);
+@blueDark:              darken(rgb(100,160,200),15%);
+@green:                 rgb(134,185,120);
+@red:                   rgb(210,82,62);
+@yellow:                rgb(250,207,50);
+@orange:                rgb(250,167,50);
+@pink:                  rgb(226,87,175);
+@purple:                rgb(127,123,159);
 
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        #F8F8F8;
-@textColor:             @grayDark;
+@bodyBackground:        rgb(248,248,248);
+@textColor:             @grayDarker;
 
 
 // Links
@@ -90,7 +89,7 @@
 @btnBorder:                         rgb(213,213,213);
 
 @btnPrimaryBackground:              @red;
-@btnPrimaryBackgroundHighlight:     @bloodyRed;
+@btnPrimaryBackgroundHighlight:     @red;
 
 @btnInfoBackground:                 #5bc0de;
 @btnInfoBackgroundHighlight:        #2f96b4;
@@ -183,17 +182,17 @@
 
 @navbarHeight:                    54px;
 @navbarBackgroundHighlight:       @red;
-@navbarBackground:                @bloodyRed;
-@navbarBorder:                    darken(@bloodyRed, 12%);
+@navbarBackground:                @red;
+@navbarBorder:                    darken(@navbarBackground, 12%);
 
 @navbarText:                      white;
-@navbarLinkColor:                 white;
-@navbarLinkColorHover:            white;
+@navbarLinkColor:                 rgb(250,247,247);
+@navbarLinkColorHover:            rgb(250,247,247);
 @navbarLinkColorActive:           white;
-@navbarLinkBackgroundHover:       @red;
-@navbarLinkBackgroundActive:      darken(@navbarBackground, 4%);
+@navbarLinkBackgroundHover:       lighten(@navbarBackground, 10%);
+@navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
 
-@navbarBrandColor:                @navbarLinkColor;
+@navbarBrandColor:                white;
 
 // Inverted navbar
 @navbarInverseBackground:                #111111;
