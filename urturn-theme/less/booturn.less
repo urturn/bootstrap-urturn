@@ -20,7 +20,7 @@
 // Urturn mixins
 
 .font-size(@sizeValue) {
-  @remValue: (@sizeValue/@baseFontSize);
+  @remValue: (@sizeValue/@font-size-base);
   @pxValue: (@sizeValue);
   font-size: ~"@{pxValue}px";
   font-size: ~"@{remValue}rem";
@@ -50,9 +50,9 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
-h1 { font-size: @baseFontSize * 2.5; line-height: 1.4em; margin-bottom: 0.2em; }
-h2 { font-size: @baseFontSize * 2.0; line-height: 1.4em; margin-bottom: 0.2em; }
-h3 { font-size: @baseFontSize * 1.5; line-height: 1.4em; margin-bottom: 0.2em; }
+h1 { font-size: @font-size-base * 2.5; line-height: 1.4em; margin-bottom: 0.2em; }
+h2 { font-size: @font-size-base * 2.0; line-height: 1.4em; margin-bottom: 0.2em; }
+h3 { font-size: @font-size-base * 1.5; line-height: 1.4em; margin-bottom: 0.2em; }
 
 
 // Brand identity
@@ -74,13 +74,13 @@ h3 { font-size: @baseFontSize * 1.5; line-height: 1.4em; margin-bottom: 0.2em; }
       padding-top: 0;
       padding-bottom: 0;
 
-      line-height: @navbarHeight;
+      line-height: @navbar-height;
     }
 
     .logo {
       display: inline-block;
       width: 84px;
-      height: @navbarHeight;
+      height: @navbar-height;
       margin: 0 16px 0 0;
 
       color: transparent;
@@ -100,7 +100,7 @@ h3 { font-size: @baseFontSize * 1.5; line-height: 1.4em; margin-bottom: 0.2em; }
 }
 
 .navbar-inner {
-  background: @bloodyRed;
+  background: @bloody-red;
   border: none;
 }
 
@@ -151,13 +151,13 @@ input[type="color"]:focus,
   padding: 40px;
   margin-bottom: 20px;
   border: none;
-  .border-radius(4px);
+  border-radius: 4px;
   .box-shadow(0px 0px 5px rgba(0,0,0,.1));
 }
 
 .well{
   border: none;
-  .border-radius(4px);
+  border-radius: 4px;
   .box-shadow(0px 0px 5px rgba(0,0,0,.1));
 
   > *:first-child {
@@ -187,8 +187,8 @@ input[type="color"]:focus,
 // Footer
 
 .footer{
-  background-color: @grayDarker;
-  color: @white;
+  background-color: @gray-darker;
+  color: #fff;
   padding: 40px 0;
   @media (max-width: 767px) {
       margin-right: -20px;
@@ -224,9 +224,9 @@ input[type="color"]:focus,
 
 pre {
   font-size: 12px;
-  background-color: @white;
+  background-color: #fff;
   border-color: rgb(217,217,217);
-  .border-radius(4px);
+  border-radius: 4px;
 
   code {
     background: none;
@@ -235,14 +235,11 @@ pre {
 }
 
 code {
-  color: @bloodyRed;
+  color: @bloody-red;
   font-weight: normal;
   background: white;
 }
 
-.navbar .btn-navbar {
-  .buttonBackground(darken(@navbarBackgroundHighlight, 18%), darken(@navbarBackground, 18%));
-}
 
 @media (max-width: 979px){
   .navbar-fixed-top .navbar-inner,
@@ -254,26 +251,26 @@ code {
     color: white;
 
     &:hover {
-      background-color: lighten(@bloodyRed,5%);
+      background-color: lighten(@bloody-red,5%);
     }
   }
 }
 
 blockquote {
   padding: 0 0 0 16px;
-  margin: 0 0 @baseLineHeight;
-  border-left: 3px solid @grayLighter;
+  margin: 0 0 @line-height-base;
+  border-left: 3px solid @gray-lighter;
   padding: 0.8em;
-  background-color: lighten(@grayLighter, 6%);
+  background-color: lighten(@gray-lighter, 6%);
   p {
-    color: @grayLight;
+    color: @gray-light;
     margin-bottom: 0;
-    font-size: @baseFontSize;
+    font-size: @font-size-base;
   }
   small {
     display: block;
-    line-height: @baseLineHeight;
-    color: @grayLight;
+    line-height: @line-height-base;
+    color: @gray-light;
     &:before {
       content: '\2014 \00A0';
     }

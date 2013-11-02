@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<!doctype html>
+<html><head>
     <meta charset="utf-8">
     <title>Base · Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,17 +21,20 @@
 
     <!-- Navbar
     ================================================== -->
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand urturn" href="./index.html"><strong>Urturn</strong></a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
+    <div class="navbar navbar-fixed-top navbar-default">
+      <div class="container">
+        <div class="container"><div class="navbar-header"><a class="urturn navbar-brand" href="./index.html"><strong>Urturn</strong></a>
+
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    </div>
+
+          <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav">
               <li class="">
                 <a href="./index.html">Home</a>
               </li>
@@ -61,7 +63,7 @@
     <!-- Docs nav
     ================================================== -->
     <div class="row">
-      <div class="span3">
+      <div class="col-sm-3 col-md-3">
         <ul class="nav nav-tabs nav-stacked bs-docs-sidenav bs-docs-sidebar">
           <li><a href="#typography"><i class="icon-chevron-right"></i> Typography</a></li>
           <li><a href="#code"><i class="icon-chevron-right"></i> Code</a></li>
@@ -72,7 +74,7 @@
           <li><a href="#icons"><i class="icon-chevron-right"></i> Icons by Glyphicons</a></li>
         </ul>
       </div>
-      <div class="span9">
+      <div class="col-sm-9 col-md-9">
 
 
 
@@ -125,8 +127,7 @@
           <div class="bs-docs-example">
             <p><small>This line of text is meant to be treated as fine print.</small></p>
           </div>
-<pre class="prettyprint">
-&lt;p&gt;
+<pre class="prettyprint">&lt;p&gt;
   &lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;
 &lt;/p&gt;
 </pre>
@@ -154,8 +155,7 @@
             <p class="text-center">Center aligned text.</p>
             <p class="text-right">Right aligned text.</p>
           </div>
-<pre class="prettyprint linenums">
-&lt;p class="text-left"&gt;Left aligned text.&lt;/p&gt;
+<pre class="prettyprint linenums">&lt;p class="text-left"&gt;Left aligned text.&lt;/p&gt;
 &lt;p class="text-center"&gt;Center aligned text.&lt;/p&gt;
 &lt;p class="text-right"&gt;Right aligned text.&lt;/p&gt;
 </pre>
@@ -163,14 +163,13 @@
           <h3>Emphasis classes</h3>
           <p>Convey meaning through color with a handful of emphasis utility classes.</p>
           <div class="bs-docs-example">
-            <p class="muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+            <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
             <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
             <p class="text-error">Donec ullamcorper nulla non metus auctor fringilla.</p>
             <p class="text-info">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</p>
             <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
           </div>
-<pre class="prettyprint linenums">
-&lt;p class="muted"&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.&lt;/p&gt;
+<pre class="prettyprint linenums">&lt;p class="muted"&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.&lt;/p&gt;
 &lt;p class="text-warning"&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/p&gt;
 &lt;p class="text-error"&gt;Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;
 &lt;p class="text-info"&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.&lt;/p&gt;
@@ -219,8 +218,7 @@
               <a href="mailto:#">first.last@example.com</a>
             </address>
           </div>
-<pre class="prettyprint linenums">
-&lt;address&gt;
+<pre class="prettyprint linenums">&lt;address&gt;
   &lt;strong&gt;Twitter, Inc.&lt;/strong&gt;&lt;br&gt;
   795 Folsom Ave, Suite 600&lt;br&gt;
   San Francisco, CA 94107&lt;br&gt;
@@ -247,8 +245,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
             </blockquote>
           </div>
-<pre class="prettyprint linenums">
-&lt;blockquote&gt;
+<pre class="prettyprint linenums">&lt;blockquote&gt;
   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
 &lt;/blockquote&gt;
 </pre>
@@ -264,8 +261,7 @@
               <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
             </blockquote>
           </div>
-<pre class="prettyprint linenums">
-&lt;blockquote&gt;
+<pre class="prettyprint linenums">&lt;blockquote&gt;
   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
   &lt;small&gt;Someone famous &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/small&gt;
 &lt;/blockquote&gt;
@@ -279,8 +275,7 @@
               <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
             </blockquote>
           </div>
-<pre class="prettyprint linenums">
-&lt;blockquote class="pull-right"&gt;
+<pre class="prettyprint linenums">&lt;blockquote class="pull-right"&gt;
   ...
 &lt;/blockquote&gt;
 </pre>
@@ -313,8 +308,7 @@
               <li>Eget porttitor lorem</li>
             </ul>
           </div>
-<pre class="prettyprint linenums">
-&lt;ul&gt;
+<pre class="prettyprint linenums">&lt;ul&gt;
   &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
@@ -333,8 +327,7 @@
               <li>Eget porttitor lorem</li>
             </ol>
           </div>
-<pre class="prettyprint linenums">
-&lt;ol&gt;
+<pre class="prettyprint linenums">&lt;ol&gt;
   &lt;li&gt;...&lt;/li&gt;
 &lt;/ol&gt;
 </pre>
@@ -342,7 +335,7 @@
         <h3>Unstyled</h3>
         <p>Remove the default <code>list-style</code> and left padding on list items (immediate children only).</p>
         <div class="bs-docs-example">
-          <ul class="unstyled">
+          <ul class="list-unstyled">
             <li>Lorem ipsum dolor sit amet</li>
             <li>Consectetur adipiscing elit</li>
             <li>Integer molestie lorem at massa</li>
@@ -360,8 +353,7 @@
             <li>Eget porttitor lorem</li>
           </ul>
         </div>
-<pre class="prettyprint linenums">
-&lt;ul class="unstyled"&gt;
+<pre class="prettyprint linenums">&lt;ul class="unstyled"&gt;
   &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
@@ -369,14 +361,13 @@
         <h3>Inline</h3>
         <p>Place all list items on a single line with <code>inline-block</code> and some light padding.</p>
         <div class="bs-docs-example">
-          <ul class="inline">
+          <ul class="list-inline">
             <li>Lorem ipsum</li>
             <li>Phasellus iaculis</li>
             <li>Nulla volutpat</li>
           </ul>
         </div>
-<pre class="prettyprint linenums">
-&lt;ul class="inline"&gt;
+<pre class="prettyprint linenums">&lt;ul class="inline"&gt;
   &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
@@ -394,8 +385,7 @@
             <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
           </dl>
         </div>
-<pre class="prettyprint linenums">
-&lt;dl&gt;
+<pre class="prettyprint linenums">&lt;dl&gt;
   &lt;dt&gt;...&lt;/dt&gt;
   &lt;dd&gt;...&lt;/dd&gt;
 &lt;/dl&gt;
@@ -416,8 +406,7 @@
             <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
           </dl>
         </div>
-<pre class="prettyprint linenums">
-&lt;dl class="dl-horizontal"&gt;
+<pre class="prettyprint linenums">&lt;dl class="dl-horizontal"&gt;
   &lt;dt&gt;...&lt;/dt&gt;
   &lt;dd&gt;...&lt;/dd&gt;
 &lt;/dl&gt;
@@ -442,8 +431,7 @@
 <div class="bs-docs-example">
   For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 </div>
-<pre class="prettyprint linenums">
-For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped as inline.
+<pre class="prettyprint linenums">For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped as inline.
 </pre>
 
           <h2>Basic block</h2>
@@ -451,8 +439,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 <div class="bs-docs-example">
   <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
 </div>
-<pre class="prettyprint linenums" style="margin-bottom: 9px;">
-&lt;pre&gt;
+<pre class="prettyprint linenums" style="margin-bottom: 9px;">&lt;pre&gt;
   &amp;lt;p&amp;gt;Sample text here...&amp;lt;/p&amp;gt;
 &lt;/pre&gt;
 </pre>
@@ -470,7 +457,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           </div>
 
           <h2>Default styles</h2>
-          <p>For basic styling&mdash;light padding and only horizontal dividers&mdash;add the base class <code>.table</code> to any <code>&lt;table&gt;</code>.</p>
+          <p>For basic styling—light padding and only horizontal dividers—add the base class <code>.table</code> to any <code>&lt;table&gt;</code>.</p>
           <div class="bs-docs-example">
             <table class="table">
               <thead>
@@ -503,8 +490,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
               </tbody>
             </table>
           </div>
-<pre class="prettyprint linenums">
-&lt;table class="table"&gt;
+<pre class="prettyprint linenums">&lt;table class="table"&gt;
   …
 &lt;/table&gt;
 </pre>
@@ -550,8 +536,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
               </tbody>
             </table>
           </div>
-<pre class="prettyprint linenums" style="margin-bottom: 18px;">
-&lt;table class="table table-striped"&gt;
+<pre class="prettyprint linenums" style="margin-bottom: 18px;">&lt;table class="table table-striped"&gt;
   …
 &lt;/table&gt;
 </pre>
@@ -594,8 +579,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
               </tbody>
             </table>
           </div>
-<pre class="prettyprint linenums">
-&lt;table class="table table-bordered"&gt;
+<pre class="prettyprint linenums">&lt;table class="table table-bordered"&gt;
   …
 &lt;/table&gt;
 </pre>
@@ -633,8 +617,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
               </tbody>
             </table>
           </div>
-<pre class="prettyprint linenums" style="margin-bottom: 18px;">
-&lt;table class="table table-hover"&gt;
+<pre class="prettyprint linenums" style="margin-bottom: 18px;">&lt;table class="table table-hover"&gt;
   …
 &lt;/table&gt;
 </pre>
@@ -672,8 +655,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
               </tbody>
             </table>
           </div>
-<pre class="prettyprint linenums" style="margin-bottom: 18px;">
-&lt;table class="table table-condensed"&gt;
+<pre class="prettyprint linenums" style="margin-bottom: 18px;">&lt;table class="table table-condensed"&gt;
   …
 &lt;/table&gt;
 </pre>
@@ -760,8 +742,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
               </tbody>
             </table>
           </div>
-<pre class="prettyprint linenums">
-...
+<pre class="prettyprint linenums">...
   &lt;tr class="success"&gt;
     &lt;td&gt;1&lt;/td&gt;
     &lt;td&gt;TB - Monthly&lt;/td&gt;
@@ -847,8 +828,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
               </tr>
             </tbody>
           </table>
-<pre class="prettyprint linenums">
-&lt;table&gt;
+<pre class="prettyprint linenums">&lt;table&gt;
   &lt;caption&gt;...&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
@@ -882,16 +862,15 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
             <fieldset>
               <legend>Legend</legend>
               <label>Label name</label>
-              <input type="text" placeholder="Type something…">
+              <input type="text" placeholder="Type something…" class="form-control">
               <span class="help-block">Example block-level help text here.</span>
-              <label class="checkbox">
+              <div class="checkbox"><label class="">
                 <input type="checkbox"> Check me out
-              </label>
-              <button type="submit" class="btn">Submit</button>
+              </label></div>
+              <button type="submit" class="btn btn-default">Submit</button>
             </fieldset>
           </form>
-<pre class="prettyprint linenums">
-&lt;form&gt;
+<pre class="prettyprint linenums">&lt;form&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;Legend&lt;/legend&gt;
     &lt;label&gt;Label name&lt;/label&gt;
@@ -914,12 +893,11 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
           <h3>Search form</h3>
           <p>Add <code>.form-search</code> to the form and <code>.search-query</code> to the <code>&lt;input&gt;</code> for an extra-rounded text input.</p>
-          <form class="bs-docs-example form-search">
-            <input type="text" class="input-medium search-query">
-            <button type="submit" class="btn">Search</button>
+          <form class="bs-docs-example form-inline">
+            <input type="text" class="input-medium search-query form-control">
+            <button type="submit" class="btn btn-default">Search</button>
           </form>
-<pre class="prettyprint linenums">
-&lt;form class="form-search"&gt;
+<pre class="prettyprint linenums">&lt;form class="form-search"&gt;
   &lt;input type="text" class="input-medium search-query"&gt;
   &lt;button type="submit" class="btn"&gt;Search&lt;/button&gt;
 &lt;/form&gt;
@@ -928,15 +906,14 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <h3>Inline form</h3>
           <p>Add <code>.form-inline</code> for left-aligned labels and inline-block controls for a compact layout.</p>
           <form class="bs-docs-example form-inline">
-            <input type="text" class="input-small" placeholder="Email">
-            <input type="password" class="input-small" placeholder="Password">
-            <label class="checkbox">
+            <input type="text" class="input-small form-control" placeholder="Email">
+            <input type="password" class="input-small form-control" placeholder="Password">
+            <div class="checkbox"><label class="">
               <input type="checkbox"> Remember me
-            </label>
-            <button type="submit" class="btn">Sign in</button>
+            </label></div>
+            <button type="submit" class="btn btn-default">Sign in</button>
           </form>
-<pre class="prettyprint linenums">
-&lt;form class="form-inline"&gt;
+<pre class="prettyprint linenums">&lt;form class="form-inline"&gt;
   &lt;input type="text" class="input-small" placeholder="Email"&gt;
   &lt;input type="password" class="input-small" placeholder="Password"&gt;
   &lt;label class="checkbox"&gt;
@@ -955,29 +932,28 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
             <li>Wrap any associated controls in <code>.controls</code> for proper alignment</li>
           </ul>
           <form class="bs-docs-example form-horizontal">
-            <div class="control-group">
+            <div class="form-group">
               <label class="control-label" for="inputEmail">Email</label>
               <div class="controls">
-                <input type="text" id="inputEmail" placeholder="Email">
+                <input type="text" id="inputEmail" placeholder="Email" class="form-control">
               </div>
             </div>
-            <div class="control-group">
+            <div class="form-group">
               <label class="control-label" for="inputPassword">Password</label>
               <div class="controls">
-                <input type="password" id="inputPassword" placeholder="Password">
+                <input type="password" id="inputPassword" placeholder="Password" class="form-control">
               </div>
             </div>
-            <div class="control-group">
+            <div class="form-group">
               <div class="controls">
-                <label class="checkbox">
+                <div class="checkbox"><label class="">
                   <input type="checkbox"> Remember me
-                </label>
-                <button type="submit" class="btn">Sign in</button>
+                </label></div>
+                <button type="submit" class="btn btn-default">Sign in</button>
               </div>
             </div>
           </form>
-<pre class="prettyprint linenums">
-&lt;form class="form-horizontal"&gt;
+<pre class="prettyprint linenums">&lt;form class="form-horizontal"&gt;
   &lt;div class="control-group"&gt;
     &lt;label class="control-label" for="inputEmail"&gt;Email&lt;/label&gt;
     &lt;div class="controls"&gt;
@@ -1012,10 +988,9 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <p>Most common form control, text-based input fields. Includes support for all HTML5 types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color.</p>
           <p>Requires the use of a specified <code>type</code> at all times.</p>
           <form class="bs-docs-example form-inline">
-            <input type="text" placeholder="Text input">
+            <input type="text" placeholder="Text input" class="form-control">
           </form>
-<pre class="prettyprint linenums">
-&lt;input type="text" placeholder="Text input"&gt;
+<pre class="prettyprint linenums">&lt;input type="text" placeholder="Text input"&gt;
 </pre>
 
           <h3>Textarea</h3>
@@ -1023,37 +998,35 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <form class="bs-docs-example form-inline">
             <textarea rows="3"></textarea>
           </form>
-<pre class="prettyprint linenums">
-&lt;textarea rows="3"&gt;&lt;/textarea&gt;
+<pre class="prettyprint linenums">&lt;textarea rows="3"&gt;&lt;/textarea&gt;
 </pre>
 
           <h3>Checkboxes and radios</h3>
           <p>Checkboxes are for selecting one or several options in a list while radios are for selecting one option from many.</p>
           <h4>Default (stacked)</h4>
           <form class="bs-docs-example">
-            <label class="checkbox">
+            <div class="checkbox"><label class="">
               <input type="checkbox" value="">
-              Option one is this and that&mdash;be sure to include why it's great
-            </label>
+              Option one is this and that—be sure to include why it's great
+            </label></div>
             <br>
-            <label class="radio">
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-              Option one is this and that&mdash;be sure to include why it's great
-            </label>
-            <label class="radio">
+            <div class="checkbox"><label class="">
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+              Option one is this and that—be sure to include why it's great
+            </label></div>
+            <div class="checkbox"><label class="">
               <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
               Option two can be something else and selecting it will deselect option one
-            </label>
+            </label></div>
           </form>
-<pre class="prettyprint linenums">
-&lt;label class="checkbox"&gt;
+<pre class="prettyprint linenums">&lt;label class="checkbox"&gt;
   &lt;input type="checkbox" value=""&gt;
-  Option one is this and that&mdash;be sure to include why it's great
+  Option one is this and that—be sure to include why it's great
 &lt;/label&gt;
 
 &lt;label class="radio"&gt;
   &lt;input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked&gt;
-  Option one is this and that&mdash;be sure to include why it's great
+  Option one is this and that—be sure to include why it's great
 &lt;/label&gt;
 &lt;label class="radio"&gt;
   &lt;input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"&gt;
@@ -1064,18 +1037,17 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <h4>Inline checkboxes</h4>
           <p>Add the <code>.inline</code> class to a series of checkboxes or radios for controls appear on the same line.</p>
           <form class="bs-docs-example">
-            <label class="checkbox inline">
+            <label class="checkbox-inline">
               <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
             </label>
-            <label class="checkbox inline">
+            <label class="checkbox-inline">
               <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
             </label>
-            <label class="checkbox inline">
+            <label class="checkbox-inline">
               <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
             </label>
           </form>
-<pre class="prettyprint linenums">
-&lt;label class="checkbox inline"&gt;
+<pre class="prettyprint linenums">&lt;label class="checkbox inline"&gt;
   &lt;input type="checkbox" id="inlineCheckbox1" value="option1"&gt; 1
 &lt;/label&gt;
 &lt;label class="checkbox inline"&gt;
@@ -1105,8 +1077,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
               <option>5</option>
             </select>
           </form>
-<pre class="prettyprint linenums">
-&lt;select&gt;
+<pre class="prettyprint linenums">&lt;select&gt;
   &lt;option&gt;1&lt;/option&gt;
   &lt;option&gt;2&lt;/option&gt;
   &lt;option&gt;3&lt;/option&gt;
@@ -1138,16 +1109,15 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <form class="bs-docs-example">
             <div class="input-prepend">
               <span class="add-on">@</span>
-              <input class="span2" id="prependedInput" type="text" placeholder="Username">
+              <input class="span2 form-control" id="prependedInput" type="text" placeholder="Username">
             </div>
             <br>
             <div class="input-append">
-              <input class="span2" id="appendedInput" type="text">
+              <input class="span2 form-control" id="appendedInput" type="text">
               <span class="add-on">.00</span>
             </div>
           </form>
-<pre class="prettyprint linenums">
-&lt;div class="input-prepend"&gt;
+<pre class="prettyprint linenums">&lt;div class="input-prepend"&gt;
   &lt;span class="add-on"&gt;@&lt;/span&gt;
   &lt;input class="span2" id="prependedInput" type="text" placeholder="Username"&gt;
 &lt;/div&gt;
@@ -1162,12 +1132,11 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <form class="bs-docs-example form-inline">
             <div class="input-prepend input-append">
               <span class="add-on">$</span>
-              <input class="span2" id="appendedPrependedInput" type="text">
+              <input class="span2 form-control" id="appendedPrependedInput" type="text">
               <span class="add-on">.00</span>
             </div>
           </form>
-<pre class="prettyprint linenums">
-&lt;div class="input-prepend input-append"&gt;
+<pre class="prettyprint linenums">&lt;div class="input-prepend input-append"&gt;
   &lt;span class="add-on"&gt;$&lt;/span&gt;
   &lt;input class="span2" id="appendedPrependedInput" type="text"&gt;
   &lt;span class="add-on"&gt;.00&lt;/span&gt;
@@ -1178,25 +1147,23 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <p>Instead of a <code>&lt;span&gt;</code> with text, use a <code>.btn</code> to attach a button (or two) to an input.</p>
           <form class="bs-docs-example">
             <div class="input-append">
-              <input class="span2" id="appendedInputButton" type="text">
-              <button class="btn" type="button">Go!</button>
+              <input class="span2 form-control" id="appendedInputButton" type="text">
+              <button class="btn btn-default" type="button">Go!</button>
             </div>
           </form>
-<pre class="prettyprint linenums">
-&lt;div class="input-append"&gt;
+<pre class="prettyprint linenums">&lt;div class="input-append"&gt;
   &lt;input class="span2" id="appendedInputButton" type="text"&gt;
   &lt;button class="btn" type="button"&gt;Go!&lt;/button&gt;
 &lt;/div&gt;
 </pre>
           <form class="bs-docs-example">
             <div class="input-append">
-              <input class="span2" id="appendedInputButtons" type="text">
-              <button class="btn" type="button">Search</button>
-              <button class="btn" type="button">Options</button>
+              <input class="span2 form-control" id="appendedInputButtons" type="text">
+              <button class="btn btn-default" type="button">Search</button>
+              <button class="btn btn-default" type="button">Options</button>
             </div>
           </form>
-<pre class="prettyprint linenums">
-&lt;div class="input-append"&gt;
+<pre class="prettyprint linenums">&lt;div class="input-append"&gt;
   &lt;input class="span2" id="appendedInputButtons" type="text"&gt;
   &lt;button class="btn" type="button"&gt;Search&lt;/button&gt;
   &lt;button class="btn" type="button"&gt;Options&lt;/button&gt;
@@ -1207,9 +1174,9 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <p></p>
           <form class="bs-docs-example">
             <div class="input-append">
-              <input class="span2" id="appendedDropdownButton" type="text">
+              <input class="span2 form-control" id="appendedDropdownButton" type="text">
               <div class="btn-group">
-                <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                <button class="btn dropdown-toggle btn-default" data-toggle="dropdown">Action <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>
                   <li><a href="#">Another action</a></li>
@@ -1220,8 +1187,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
               </div><!-- /btn-group -->
             </div><!-- /input-append -->
           </form>
-<pre class="prettyprint linenums">
-&lt;div class="input-append"&gt;
+<pre class="prettyprint linenums">&lt;div class="input-append"&gt;
   &lt;input class="span2" id="appendedDropdownButton" type="text"&gt;
   &lt;div class="btn-group"&gt;
     &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;
@@ -1238,7 +1204,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <form class="bs-docs-example">
             <div class="input-prepend">
               <div class="btn-group">
-                <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                <button class="btn dropdown-toggle btn-default" data-toggle="dropdown">Action <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>
                   <li><a href="#">Another action</a></li>
@@ -1247,11 +1213,10 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
                   <li><a href="#">Separated link</a></li>
                 </ul>
               </div><!-- /btn-group -->
-              <input class="span2" id="prependedDropdownButton" type="text">
+              <input class="span2 form-control" id="prependedDropdownButton" type="text">
             </div><!-- /input-prepend -->
           </form>
-<pre class="prettyprint linenums">
-&lt;div class="input-prepend"&gt;
+<pre class="prettyprint linenums">&lt;div class="input-prepend"&gt;
   &lt;div class="btn-group"&gt;
     &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;
       Action
@@ -1268,7 +1233,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <form class="bs-docs-example">
             <div class="input-prepend input-append">
               <div class="btn-group">
-                <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                <button class="btn dropdown-toggle btn-default" data-toggle="dropdown">Action <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>
                   <li><a href="#">Another action</a></li>
@@ -1277,9 +1242,9 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
                   <li><a href="#">Separated link</a></li>
                 </ul>
               </div><!-- /btn-group -->
-              <input class="span2" id="appendedPrependedDropdownButton" type="text">
+              <input class="span2 form-control" id="appendedPrependedDropdownButton" type="text">
               <div class="btn-group">
-                <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                <button class="btn dropdown-toggle btn-default" data-toggle="dropdown">Action <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>
                   <li><a href="#">Another action</a></li>
@@ -1290,8 +1255,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
               </div><!-- /btn-group -->
             </div><!-- /input-prepend input-append -->
           </form>
-<pre class="prettyprint linenums">
-&lt;div class="input-prepend input-append"&gt;
+<pre class="prettyprint linenums">&lt;div class="input-prepend input-append"&gt;
   &lt;div class="btn-group"&gt;
     &lt;button class="btn dropdown-toggle" data-toggle="dropdown"&gt;
       Action
@@ -1318,8 +1282,8 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <form class="bs-docs-example">
             <div class="input-prepend">
               <div class="btn-group">
-                <button class="btn" tabindex="-1">Action</button>
-                <button class="btn dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                <button class="btn btn-default" tabindex="-1">Action</button>
+                <button class="btn dropdown-toggle btn-default" data-toggle="dropdown" tabindex="-1">
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
@@ -1330,13 +1294,13 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
                   <li><a href="#">Separated link</a></li>
                 </ul>
               </div>
-              <input type="text">
+              <input type="text" class="form-control">
             </div>
             <div class="input-append">
-              <input type="text">
+              <input type="text" class="form-control">
               <div class="btn-group">
-                <button class="btn" tabindex="-1">Action</button>
-                <button class="btn dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                <button class="btn btn-default" tabindex="-1">Action</button>
+                <button class="btn dropdown-toggle btn-default" data-toggle="dropdown" tabindex="-1">
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
@@ -1349,8 +1313,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
               </div>
             </div>
           </form>
-<pre class="prettyprint linenums">
-&lt;form&gt;
+<pre class="prettyprint linenums">&lt;form&gt;
   &lt;div class="input-prepend"&gt;
     &lt;div class="btn-group"&gt;...&lt;/div&gt;
     &lt;input type="text"&gt;
@@ -1363,18 +1326,17 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 </pre>
 
           <h4>Search form</h4>
-          <form class="bs-docs-example form-search">
+          <form class="bs-docs-example form-inline">
             <div class="input-append">
-              <input type="text" class="span2 search-query">
-              <button type="submit" class="btn">Search</button>
+              <input type="text" class="span2 search-query form-control">
+              <button type="submit" class="btn btn-default">Search</button>
             </div>
             <div class="input-prepend">
-              <button type="submit" class="btn">Search</button>
-              <input type="text" class="span2 search-query">
+              <button type="submit" class="btn btn-default">Search</button>
+              <input type="text" class="span2 search-query form-control">
             </div>
           </form>
-<pre class="prettyprint linenums">
-&lt;form class="form-search"&gt;
+<pre class="prettyprint linenums">&lt;form class="form-search"&gt;
   &lt;div class="input-append"&gt;
     &lt;input type="text" class="span2 search-query"&gt;
     &lt;button type="submit" class="btn"&gt;Search&lt;/button&gt;
@@ -1393,26 +1355,24 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <p>Make any <code>&lt;input&gt;</code> or <code>&lt;textarea&gt;</code> element behave like a block level element.</p>
           <form class="bs-docs-example" style="padding-bottom: 15px;">
             <div class="controls">
-              <input class="input-block-level" type="text" placeholder=".input-block-level">
+              <input class="form-control" type="text" placeholder=".input-block-level">
             </div>
           </form>
-<pre class="prettyprint linenums">
-&lt;input class="input-block-level" type="text" placeholder=".input-block-level"&gt;
+<pre class="prettyprint linenums">&lt;input class="input-block-level" type="text" placeholder=".input-block-level"&gt;
 </pre>
 
           <h4>Relative sizing</h4>
           <form class="bs-docs-example" style="padding-bottom: 15px;">
             <div class="controls docs-input-sizes">
-              <input class="input-mini" type="text" placeholder=".input-mini">
-              <input class="input-small" type="text" placeholder=".input-small">
-              <input class="input-medium" type="text" placeholder=".input-medium">
-              <input class="input-large" type="text" placeholder=".input-large">
-              <input class="input-xlarge" type="text" placeholder=".input-xlarge">
-              <input class="input-xxlarge" type="text" placeholder=".input-xxlarge">
+              <input class="input-mini form-control" type="text" placeholder=".input-mini">
+              <input class="input-small form-control" type="text" placeholder=".input-small">
+              <input class="input-medium form-control" type="text" placeholder=".input-medium">
+              <input class="input-large form-control" type="text" placeholder=".input-large">
+              <input class="input-xlarge form-control" type="text" placeholder=".input-xlarge">
+              <input class="input-xxlarge form-control" type="text" placeholder=".input-xxlarge">
             </div>
           </form>
-<pre class="prettyprint linenums">
-&lt;input class="input-mini" type="text" placeholder=".input-mini"&gt;
+<pre class="prettyprint linenums">&lt;input class="input-mini" type="text" placeholder=".input-mini"&gt;
 &lt;input class="input-small" type="text" placeholder=".input-small"&gt;
 &lt;input class="input-medium" type="text" placeholder=".input-medium"&gt;
 &lt;input class="input-large" type="text" placeholder=".input-large"&gt;
@@ -1427,9 +1387,9 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <p>Use <code>.span1</code> to <code>.span12</code> for inputs that match the same sizes of the grid columns.</p>
           <form class="bs-docs-example" style="padding-bottom: 15px;">
             <div class="controls docs-input-sizes">
-              <input class="span1" type="text" placeholder=".span1">
-              <input class="span2" type="text" placeholder=".span2">
-              <input class="span3" type="text" placeholder=".span3">
+              <input class="span1 form-control" type="text" placeholder=".span1">
+              <input class="span2 form-control" type="text" placeholder=".span2">
+              <input class="span3 form-control" type="text" placeholder=".span3">
               <select class="span1">
                 <option>1</option>
                 <option>2</option>
@@ -1453,8 +1413,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
               </select>
             </div>
           </form>
-<pre class="prettyprint linenums">
-&lt;input class="span1" type="text" placeholder=".span1"&gt;
+<pre class="prettyprint linenums">&lt;input class="span1" type="text" placeholder=".span1"&gt;
 &lt;input class="span2" type="text" placeholder=".span2"&gt;
 &lt;input class="span3" type="text" placeholder=".span3"&gt;
 &lt;select class="span1"&gt;
@@ -1471,27 +1430,26 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <p>For multiple grid inputs per line, <strong>use the <code>.controls-row</code> modifier class for proper spacing</strong>. It floats the inputs to collapse white-space, sets the proper margins, and clears the float.</p>
           <form class="bs-docs-example" style="padding-bottom: 15px;">
             <div class="controls">
-              <input class="span5" type="text" placeholder=".span5">
+              <input class="span5 form-control" type="text" placeholder=".span5">
             </div>
             <div class="controls controls-row">
-              <input class="span4" type="text" placeholder=".span4">
-              <input class="span1" type="text" placeholder=".span1">
+              <input class="span4 form-control" type="text" placeholder=".span4">
+              <input class="span1 form-control" type="text" placeholder=".span1">
             </div>
             <div class="controls controls-row">
-              <input class="span3" type="text" placeholder=".span3">
-              <input class="span2" type="text" placeholder=".span2">
+              <input class="span3 form-control" type="text" placeholder=".span3">
+              <input class="span2 form-control" type="text" placeholder=".span2">
             </div>
             <div class="controls controls-row">
-              <input class="span2" type="text" placeholder=".span2">
-              <input class="span3" type="text" placeholder=".span3">
+              <input class="span2 form-control" type="text" placeholder=".span2">
+              <input class="span3 form-control" type="text" placeholder=".span3">
             </div>
             <div class="controls controls-row">
-              <input class="span1" type="text" placeholder=".span1">
-              <input class="span4" type="text" placeholder=".span4">
+              <input class="span1 form-control" type="text" placeholder=".span1">
+              <input class="span4 form-control" type="text" placeholder=".span4">
             </div>
           </form>
-<pre class="prettyprint linenums">
-&lt;div class="controls"&gt;
+<pre class="prettyprint linenums">&lt;div class="controls"&gt;
   &lt;input class="span5" type="text" placeholder=".span5"&gt;
 &lt;/div&gt;
 &lt;div class="controls controls-row"&gt;
@@ -1506,8 +1464,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <form class="bs-docs-example">
             <span class="input-xlarge uneditable-input">Some value here</span>
           </form>
-<pre class="prettyprint linenums">
-&lt;span class="input-xlarge uneditable-input"&gt;Some value here&lt;/span&gt;
+<pre class="prettyprint linenums">&lt;span class="input-xlarge uneditable-input"&gt;Some value here&lt;/span&gt;
 </pre>
 
           <h3>Form actions</h3>
@@ -1515,11 +1472,10 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <form class="bs-docs-example">
             <div class="form-actions">
               <button type="submit" class="btn btn-primary">Save changes</button>
-              <button type="button" class="btn">Cancel</button>
+              <button type="button" class="btn btn-default">Cancel</button>
             </div>
           </form>
-<pre class="prettyprint linenums">
-&lt;div class="form-actions"&gt;
+<pre class="prettyprint linenums">&lt;div class="form-actions"&gt;
   &lt;button type="submit" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
   &lt;button type="button" class="btn"&gt;Cancel&lt;/button&gt;
 &lt;/div&gt;
@@ -1529,19 +1485,17 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <p>Inline and block level support for help text that appears around form controls.</p>
           <h4>Inline help</h4>
           <form class="bs-docs-example form-inline">
-            <input type="text"> <span class="help-inline">Inline help text</span>
+            <input type="text" class="form-control"> <span class="help-block">Inline help text</span>
           </form>
-<pre class="prettyprint linenums">
-&lt;input type="text"&gt;&lt;span class="help-inline"&gt;Inline help text&lt;/span&gt;
+<pre class="prettyprint linenums">&lt;input type="text"&gt;&lt;span class="help-inline"&gt;Inline help text&lt;/span&gt;
 </pre>
 
           <h4>Block help</h4>
           <form class="bs-docs-example form-inline">
-            <input type="text">
+            <input type="text" class="form-control">
             <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
           </form>
-<pre class="prettyprint linenums">
-&lt;input type="text"&gt;&lt;span class="help-block"&gt;A longer block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
+<pre class="prettyprint linenums">&lt;input type="text"&gt;&lt;span class="help-block"&gt;A longer block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
 </pre>
 
 
@@ -1554,66 +1508,62 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <h3>Input focus</h3>
           <p>We remove the default <code>outline</code> styles on some form controls and apply a <code>box-shadow</code> in its place for <code>:focus</code>.</p>
           <form class="bs-docs-example form-inline">
-            <input class="input-xlarge focused" id="focusedInput" type="text" value="This is focused...">
+            <input class="input-xlarge focused form-control" id="focusedInput" type="text" value="This is focused...">
           </form>
-<pre class="prettyprint linenums">
-&lt;input class="input-xlarge" id="focusedInput" type="text" value="This is focused..."&gt;
+<pre class="prettyprint linenums">&lt;input class="input-xlarge" id="focusedInput" type="text" value="This is focused..."&gt;
 </pre>
 
           <h3>Invalid inputs</h3>
           <p>Style inputs via default browser functionality with <code>:invalid</code>. Specify a <code>type</code>, add the <code>required</code> attribute if the field is not optional, and (if applicable) specify a <code>pattern</code>.</p>
           <p>This is not available in versions of Internet Explorer 7-9 due to lack of support for CSS pseudo selectors.</p>
           <form class="bs-docs-example form-inline">
-            <input class="span3" type="email" placeholder="test@example.com" required>
+            <input class="span3 form-control" type="email" placeholder="test@example.com" required="">
           </form>
-<pre class="prettyprint linenums">
-&lt;input class="span3" type="email" required&gt;
+<pre class="prettyprint linenums">&lt;input class="span3" type="email" required&gt;
 </pre>
 
           <h3>Disabled inputs</h3>
           <p>Add the <code>disabled</code> attribute on an input to prevent user input and trigger a slightly different look.</p>
           <form class="bs-docs-example form-inline">
-            <input class="input-xlarge" id="disabledInput" type="text" placeholder="Disabled input here…" disabled>
+            <input class="input-xlarge form-control" id="disabledInput" type="text" placeholder="Disabled input here…" disabled="">
           </form>
-<pre class="prettyprint linenums">
-&lt;input class="input-xlarge" id="disabledInput" type="text" placeholder="Disabled input here..." disabled&gt;
+<pre class="prettyprint linenums">&lt;input class="input-xlarge" id="disabledInput" type="text" placeholder="Disabled input here..." disabled&gt;
 </pre>
 
           <h3>Validation states</h3>
           <p>Bootstrap includes validation styles for error, warning, info, and success messages. To use, add the appropriate class to the surrounding <code>.control-group</code>.</p>
 
           <form class="bs-docs-example form-horizontal">
-            <div class="control-group warning">
+            <div class="warning form-group">
               <label class="control-label" for="inputWarning">Input with warning</label>
               <div class="controls">
-                <input type="text" id="inputWarning">
-                <span class="help-inline">Something may have gone wrong</span>
+                <input type="text" id="inputWarning" class="form-control">
+                <span class="help-block">Something may have gone wrong</span>
               </div>
             </div>
-            <div class="control-group error">
+            <div class="error form-group">
               <label class="control-label" for="inputError">Input with error</label>
               <div class="controls">
-                <input type="text" id="inputError">
-                <span class="help-inline">Please correct the error</span>
+                <input type="text" id="inputError" class="form-control">
+                <span class="help-block">Please correct the error</span>
               </div>
             </div>
-            <div class="control-group info">
+            <div class="info form-group">
               <label class="control-label" for="inputInfo">Input with info</label>
               <div class="controls">
-                <input type="text" id="inputInfo">
-                <span class="help-inline">Username is taken</span>
+                <input type="text" id="inputInfo" class="form-control">
+                <span class="help-block">Username is taken</span>
               </div>
             </div>
-            <div class="control-group success">
+            <div class="success form-group">
               <label class="control-label" for="inputSuccess">Input with success</label>
               <div class="controls">
-                <input type="text" id="inputSuccess">
-                <span class="help-inline">Woohoo!</span>
+                <input type="text" id="inputSuccess" class="form-control">
+                <span class="help-block">Woohoo!</span>
               </div>
             </div>
           </form>
-<pre class="prettyprint linenums">
-&lt;div class="control-group warning"&gt;
+<pre class="prettyprint linenums">&lt;div class="control-group warning"&gt;
   &lt;label class="control-label" for="inputWarning"&gt;Input with warning&lt;/label&gt;
   &lt;div class="controls"&gt;
     &lt;input type="text" id="inputWarning"&gt;
@@ -1669,7 +1619,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
             </thead>
             <tbody>
               <tr>
-                <td><button type="button" class="btn">Default</button></td>
+                <td><button type="button" class="btn btn-default">Default</button></td>
                 <td><code>btn</code></td>
                 <td>Standard gray button with gradient</td>
               </tr>
@@ -1699,12 +1649,12 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
                 <td>Indicates a dangerous or potentially negative action</td>
               </tr>
               <tr>
-                <td><button type="button" class="btn btn-inverse">Inverse</button></td>
+                <td><button type="button" class="btn btn-default">Inverse</button></td>
                 <td><code>btn btn-inverse</code></td>
                 <td>Alternate dark gray button, not tied to a semantic action or use</td>
               </tr>
               <tr>
-                <td><button type="button" class="btn btn-link">Link</button></td>
+                <td><button type="button" class="btn btn-link btn-default">Link</button></td>
                 <td><code>btn btn-link</code></td>
                 <td>Deemphasize a button by making it look like a link while maintaining button behavior</td>
               </tr>
@@ -1719,24 +1669,23 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <p>Fancy larger or smaller buttons? Add <code>.btn-large</code>, <code>.btn-small</code>, or <code>.btn-mini</code> for additional sizes.</p>
           <div class="bs-docs-example">
             <p>
-              <button type="button" class="btn btn-large btn-primary">Large button</button>
-              <button type="button" class="btn btn-large">Large button</button>
+              <button type="button" class="btn btn-primary btn-lg">Large button</button>
+              <button type="button" class="btn btn-default btn-lg">Large button</button>
             </p>
             <p>
               <button type="button" class="btn btn-primary">Default button</button>
-              <button type="button" class="btn">Default button</button>
+              <button type="button" class="btn btn-default">Default button</button>
             </p>
             <p>
-              <button type="button" class="btn btn-small btn-primary">Small button</button>
-              <button type="button" class="btn btn-small">Small button</button>
+              <button type="button" class="btn btn-primary btn-sm">Small button</button>
+              <button type="button" class="btn btn-default btn-sm">Small button</button>
             </p>
             <p>
-              <button type="button" class="btn btn-mini btn-primary">Mini button</button>
-              <button type="button" class="btn btn-mini">Mini button</button>
+              <button type="button" class="btn btn-primary btn-xs">Mini button</button>
+              <button type="button" class="btn btn-default btn-xs">Mini button</button>
             </p>
           </div>
-<pre class="prettyprint linenums">
-&lt;p&gt;
+<pre class="prettyprint linenums">&lt;p&gt;
   &lt;button class="btn btn-large btn-primary" type="button"&gt;Large button&lt;/button&gt;
   &lt;button class="btn btn-large" type="button"&gt;Large button&lt;/button&gt;
 &lt;/p&gt;
@@ -1753,15 +1702,14 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
   &lt;button class="btn btn-mini" type="button"&gt;Mini button&lt;/button&gt;
 &lt;/p&gt;
 </pre>
-          <p>Create block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.btn-block</code>.</p>
+          <p>Create block level buttons—those that span the full width of a parent— by adding <code>.btn-block</code>.</p>
           <div class="bs-docs-example">
             <div class="well" style="max-width: 400px; margin: 0 auto 10px;">
-              <button type="button" class="btn btn-large btn-block btn-primary">Block level button</button>
-              <button type="button" class="btn btn-large btn-block">Block level button</button>
+              <button type="button" class="btn btn-block btn-primary btn-lg">Block level button</button>
+              <button type="button" class="btn btn-block btn-default btn-lg">Block level button</button>
             </div>
           </div>
-<pre class="prettyprint linenums">
-&lt;button class="btn btn-large btn-block btn-primary" type="button"&gt;Block level button&lt;/button&gt;
+<pre class="prettyprint linenums">&lt;button class="btn btn-large btn-block btn-primary" type="button"&gt;Block level button&lt;/button&gt;
 &lt;button class="btn btn-large btn-block" type="button"&gt;Block level button&lt;/button&gt;
 </pre>
 
@@ -1772,11 +1720,10 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <h3>Anchor element</h3>
           <p>Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.</p>
           <p class="bs-docs-example">
-            <a href="#" class="btn btn-large btn-primary disabled">Primary link</a>
-            <a href="#" class="btn btn-large disabled">Link</a>
+            <a href="#" class="btn btn-primary disabled btn-lg">Primary link</a>
+            <a href="#" class="btn disabled btn-default btn-lg">Link</a>
           </p>
-<pre class="prettyprint linenums">
-&lt;a href="#" class="btn btn-large btn-primary disabled"&gt;Primary link&lt;/a&gt;
+<pre class="prettyprint linenums">&lt;a href="#" class="btn btn-large btn-primary disabled"&gt;Primary link&lt;/a&gt;
 &lt;a href="#" class="btn btn-large disabled"&gt;Link&lt;/a&gt;
 </pre>
           <p>
@@ -1787,11 +1734,10 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <h3>Button element</h3>
           <p>Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.</p>
           <p class="bs-docs-example">
-            <button type="button" class="btn btn-large btn-primary disabled" disabled="disabled">Primary button</button>
-            <button type="button" class="btn btn-large" disabled>Button</button>
+            <button type="button" class="btn btn-primary disabled btn-lg" disabled="disabled">Primary button</button>
+            <button type="button" class="btn btn-default btn-lg" disabled="">Button</button>
           </p>
-<pre class="prettyprint linenums">
-&lt;button type="button" class="btn btn-large btn-primary disabled" disabled="disabled"&gt;Primary button&lt;/button&gt;
+<pre class="prettyprint linenums">&lt;button type="button" class="btn btn-large btn-primary disabled" disabled="disabled"&gt;Primary button&lt;/button&gt;
 &lt;button type="button" class="btn btn-large" disabled&gt;Button&lt;/button&gt;
 </pre>
 
@@ -1799,13 +1745,12 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <h2>One class, multiple tags</h2>
           <p>Use the <code>.btn</code> class on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
           <form class="bs-docs-example">
-            <a class="btn" href="">Link</a>
-            <button class="btn" type="submit">Button</button>
-            <input class="btn" type="button" value="Input">
-            <input class="btn" type="submit" value="Submit">
+            <a class="btn btn-default" href="">Link</a>
+            <button class="btn btn-default" type="submit">Button</button>
+            <input class="btn form-control btn-default" type="button" value="Input">
+            <input class="btn form-control btn-default" type="submit" value="Submit">
           </form>
-<pre class="prettyprint linenums">
-&lt;a class="btn" href=""&gt;Link&lt;/a&gt;
+<pre class="prettyprint linenums">&lt;a class="btn" href=""&gt;Link&lt;/a&gt;
 &lt;button class="btn" type="submit"&gt;Button&lt;/button&gt;
 &lt;input class="btn" type="button" value="Input"&gt;
 &lt;input class="btn" type="submit" value="Submit"&gt;
@@ -1829,8 +1774,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
             <img data-src="holder.js/140x140" class="img-circle">
             <img data-src="holder.js/140x140" class="img-polaroid">
           </div>
-<pre class="prettyprint linenums">
-&lt;img src="..." class="img-rounded"&gt;
+<pre class="prettyprint linenums">&lt;img src="..." class="img-rounded"&gt;
 &lt;img src="..." class="img-circle"&gt;
 &lt;img src="..." class="img-polaroid"&gt;
 </pre>
@@ -2006,12 +1950,10 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
           <h2>How to use</h2>
           <p>All icons require an <code>&lt;i&gt;</code> tag with a unique class, prefixed with <code>icon-</code>. To use, place the following code just about anywhere:</p>
-<pre class="prettyprint linenums">
-&lt;i class="icon-search"&gt;&lt;/i&gt;
+<pre class="prettyprint linenums">&lt;i class="icon-search"&gt;&lt;/i&gt;
 </pre>
           <p>There are also styles available for inverted (white) icons, made ready with one extra class. We will specifically enforce this class on hover and active states for nav and dropdown links.</p>
-<pre class="prettyprint linenums">
-&lt;i class="icon-search icon-white"&gt;&lt;/i&gt;
+<pre class="prettyprint linenums">&lt;i class="icon-search icon-white"&gt;&lt;/i&gt;
 </pre>
           <p>
             <span class="label label-info">Heads up!</span>
@@ -2031,15 +1973,14 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
           <div class="bs-docs-example">
             <div class="btn-toolbar">
               <div class="btn-group">
-                <a class="btn" href="#"><i class="icon-align-left"></i></a>
-                <a class="btn" href="#"><i class="icon-align-center"></i></a>
-                <a class="btn" href="#"><i class="icon-align-right"></i></a>
-                <a class="btn" href="#"><i class="icon-align-justify"></i></a>
+                <a class="btn btn-default" href="#"><i class="icon-align-left"></i></a>
+                <a class="btn btn-default" href="#"><i class="icon-align-center"></i></a>
+                <a class="btn btn-default" href="#"><i class="icon-align-right"></i></a>
+                <a class="btn btn-default" href="#"><i class="icon-align-justify"></i></a>
               </div>
             </div>
           </div>
-<pre class="prettyprint linenums">
-&lt;div class="btn-toolbar"&gt;
+<pre class="prettyprint linenums">&lt;div class="btn-toolbar"&gt;
   &lt;div class="btn-group"&gt;
     &lt;a class="btn" href="#"&gt;&lt;i class="icon-align-left"&gt;&lt;/i&gt;&lt;/a&gt;
     &lt;a class="btn" href="#"&gt;&lt;i class="icon-align-center"&gt;&lt;/i&gt;&lt;/a&gt;
@@ -2063,8 +2004,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
               </ul>
             </div>
           </div>
-<pre class="prettyprint linenums">
-&lt;div class="btn-group"&gt;
+<pre class="prettyprint linenums">&lt;div class="btn-group"&gt;
   &lt;a class="btn btn-primary" href="#"&gt;&lt;i class="icon-user icon-white"&gt;&lt;/i&gt; User&lt;/a&gt;
   &lt;a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"&gt;&lt;span class="caret"&gt;&lt;/span&gt;&lt;/a&gt;
   &lt;ul class="dropdown-menu"&gt;
@@ -2079,12 +2019,11 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
           <h5>Button sizes</h5>
           <div class="bs-docs-example">
-            <a class="btn btn-large" href="#"><i class="icon-star"></i> Star</a>
-            <a class="btn btn-small" href="#"><i class="icon-star"></i> Star</a>
-            <a class="btn btn-mini" href="#"><i class="icon-star"></i> Star</a>
+            <a class="btn btn-default btn-lg" href="#"><i class="icon-star"></i> Star</a>
+            <a class="btn btn-default btn-sm" href="#"><i class="icon-star"></i> Star</a>
+            <a class="btn btn-default btn-xs" href="#"><i class="icon-star"></i> Star</a>
           </div>
-<pre class="prettyprint linenums">
-&lt;a class="btn btn-large" href="#"&gt;&lt;i class="icon-star"&gt;&lt;/i&gt; Star&lt;/a&gt;
+<pre class="prettyprint linenums">&lt;a class="btn btn-large" href="#"&gt;&lt;i class="icon-star"&gt;&lt;/i&gt; Star&lt;/a&gt;
 &lt;a class="btn btn-small" href="#"&gt;&lt;i class="icon-star"&gt;&lt;/i&gt; Star&lt;/a&gt;
 &lt;a class="btn btn-mini" href="#"&gt;&lt;i class="icon-star"&gt;&lt;/i&gt; Star&lt;/a&gt;
 </pre>
@@ -2100,8 +2039,7 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
               </ul>
             </div>
           </div>
-<pre class="prettyprint linenums">
-&lt;ul class="nav nav-list"&gt;
+<pre class="prettyprint linenums">&lt;ul class="nav nav-list"&gt;
   &lt;li class="active"&gt;&lt;a href="#"&gt;&lt;i class="icon-home icon-white"&gt;&lt;/i&gt; Home&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon-book"&gt;&lt;/i&gt; Library&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon-pencil"&gt;&lt;/i&gt; Applications&lt;/a&gt;&lt;/li&gt;
@@ -2111,17 +2049,16 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
 
           <h4>Form fields</h4>
           <form class="bs-docs-example form-horizontal">
-            <div class="control-group">
+            <div class="form-group">
               <label class="control-label" for="inputIcon">Email address</label>
               <div class="controls">
                 <div class="input-prepend">
-                  <span class="add-on"><i class="icon-envelope"></i></span><input class="span2" id="inputIcon" type="text">
+                  <span class="add-on"><i class="icon-envelope"></i></span><input class="span2 form-control" id="inputIcon" type="text">
                 </div>
               </div>
             </div>
           </form>
-<pre class="prettyprint linenums">
-&lt;div class="control-group"&gt;
+<pre class="prettyprint linenums">&lt;div class="control-group"&gt;
   &lt;label class="control-label" for="inputIcon"&gt;Email address&lt;/label&gt;
   &lt;div class="controls"&gt;
     &lt;div class="input-prepend"&gt;
@@ -2149,20 +2086,20 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
         <section id="contact">
             <div class="container">
                 <div class="row">
-                    <div class="span7">
+                    <div class="col-sm-7 col-md-7">
                         <h2>Get the latest insights</h2>
                         <p>Drop us your email so we can update you on the latest fan engagement insights on a pleasantly infrequent basis.</p>
-                        
+
                         <form action="http://webdoc.createsend.com/t/r/s/jjurhut/" method="post" id="newsletter-form-bottom">
                             <div>
-                                <input type="text" placeholder="Email" name="cm-jjurhut-jjurhut" id="jjurhut-jjurhut" />
-                                <input type="submit" class="btn btn-red small subscribe-button" value="Subscribe" />
+                                <input type="text" placeholder="Email" name="cm-jjurhut-jjurhut" id="jjurhut-jjurhut" class="form-control">
+                                <input type="submit" class="btn btn-red small subscribe-button form-control btn-default" value="Subscribe">
                             </div>
                         </form>
 
-                    </div> 
+                    </div>
 
-                    <div class="span3 offset2">
+                    <div class="col-lg-offset-2 col-sm-3 col-md-3">
                         <div class="footer-menu">
                             <h3><a id="blog-link" href="http://blog.urturn.com"><i class="blog"></i> Blog</a></h3>
                             <h3><a id="contact-link" data-toggle="modal" href="#contact-form-modal"><i class="contact"></i> Contact us</a></h3>
@@ -2171,14 +2108,14 @@ For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped 
                         </div>
                     </div>
                 </div>
-            </div>        
+            </div>
         </section>
     </footer>
 
 
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
 
-  </body>
-</html>
+
+</body></html>
